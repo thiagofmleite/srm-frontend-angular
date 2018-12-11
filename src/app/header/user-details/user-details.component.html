@@ -1,4 +1,11 @@
-<p>
-  user-details works!
-</p>
-<app-notifications></app-notifications>
+<div class="user-menu">
+  <div class="user-details">
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>person</mat-icon> {{ user.name }}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Opção a definir</button>
+    </mat-menu>
+  </div>
+  <div class="user-notifications">
+    <app-notifications></app-notifications>
+  </div>
+</div>

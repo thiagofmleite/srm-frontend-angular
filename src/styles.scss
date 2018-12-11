@@ -1,1 +1,28 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css'
+@import 'reset.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'sass/colors.scss';
+
+body {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.combo-box {
+  .mat-form-field-underline {
+    background-color: transparent !important;
+  }
+  .mat-form-field-infix {
+    border: 1px solid $light-blue;
+    padding: .5em;
+  }
+  .mat-select-value-text  {
+    color: $light-gray !important;
+  }
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: $dark-blue;
+}

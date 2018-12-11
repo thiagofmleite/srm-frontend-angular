@@ -1,16 +1,18 @@
-example-container {
-    width: 500px;
-    height: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+@import '~src/sass/colors.scss';
+
+.side-menu {
+  .side-menu-item {
+    padding: 1em;
+    border-bottom: 1px solid $light-blue;
+    a {
+      color: $white;
+      text-decoration: none;
+      display: block;
+      .text {
+        line-height: 24px;
+        display: inline-block;
+        padding: 5px 0;
+      }
+    }
   }
-  
-  .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .example-sidenav {
-    padding: 20px;
-  }
+}

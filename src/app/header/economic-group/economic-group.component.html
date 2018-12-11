@@ -1,3 +1,10 @@
-<p>
-  economic-group works!
-</p>
+<div class="economic-group">
+  <label for="choose-economic-group">Grupo Econômico:</label>
+  <mat-form-field class="combo-box">
+      <mat-select [(ngModel)]="group">
+        <mat-option *ngFor="let group of groups" [value]="group">
+          {{group.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>

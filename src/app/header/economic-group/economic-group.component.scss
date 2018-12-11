@@ -1,0 +1,9 @@
+@import '~src/sass/colors.scss';
+
+.economic-group {
+    padding: 1em;
+    label {
+        color: $light-gray;
+        margin-right: 1em;
+    }
+}

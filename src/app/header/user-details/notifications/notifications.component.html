@@ -1,3 +1,4 @@
-<p>
-  notifications works!
-</p>
+<button mat-button [matMenuTriggerFor]="menu"><mat-icon>notifications_none</mat-icon>({{ notifications.length }})</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let notification of notifications; let i=index">{{ notification.text }}</button>
+</mat-menu>

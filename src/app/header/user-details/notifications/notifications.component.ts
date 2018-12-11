@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Notification } from './Notification';
 
 @Component({
   selector: 'app-notifications',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsComponent implements OnInit {
 
-  constructor() { }
+  notifications: Notification[] = [];
+
+  constructor() {
+    for (let index = 0; index < 3; index++) {
+      this.notifications.push({
+        text: `Notificação #${index}`
+      });
+    }
+   }
 
   ngOnInit() {
   }

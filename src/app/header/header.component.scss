@@ -1,0 +1,27 @@
+@import '~src/sass/colors.scss';
+
+.header {
+    background-color: $white;
+    max-height: 85px;
+    display: table;
+    width: 100%;
+    .brand-img {
+        float: left;
+        max-width: 200px;
+        padding: 1em;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .header-options {
+        float: right;
+        .economic-group-wrapper {
+            display: inline-block;
+        }
+        .user-details-wrapper {
+            display: inline-block;
+        }
+
+    }
+}

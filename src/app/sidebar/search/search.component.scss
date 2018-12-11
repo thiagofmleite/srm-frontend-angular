@@ -1,0 +1,13 @@
+@import '~src/sass/colors.scss';
+
+.search-container {
+    background-color: $white;
+    max-height: 85px;
+    height: 85px;
+    box-sizing: border-box;
+    padding: 1em;
+
+    .mat-icon {
+        color: $light-gray;
+    }
+}

@@ -1,0 +1,14 @@
+@import '~src/sass/colors.scss';
+
+.user-menu {
+    padding-right: 1em;
+    color: $white;
+    .user-details {
+        background-color: $dark-blue;
+        display: inline-block;
+    }
+    .user-notifications {
+        background-color: $light-blue;
+        display: inline-block;
+    }
+}
